@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: FH+TzmhQ9S27dOXi9F9ISWvCskfVRBSVKl2es0GMSJNVdh+Joo/qDhqjRFSWTHDA1w1+Qg/dW/KDIV8ayDrOk6Q+AspfrrJUotzoJKAQj+kaME1+7W02dBAAiTNpXJyOxco03mPx9lnqgvmQqGDsMIK47XMANAG1mNi6PQup6iCi1RlLvlub3In7Ehu8KowLBNonZpZ7EsxXyfwK1IvXPsu2TSBHW7UZDMkYqNThgpnZy79Dpu/rCTMdN/FS7t0yfWUEi/4pwyVKPN57kVNHubUDfLZhazMA56WseGM4AVnlWSSVYJimsKvS3aUksVnmCAAthQBrQbLPk6aplJDaPXWFcHtdtQ1fQ9wimWDyCBn8Ycx/mVj7r3h6e5CKWGaGvHroyAw/YNcL2cGSOPet3aGd6JI5saro+Du7QIoqgESjYJGytEE4EmsLbRHbk/Q4ANBiLCzeRPm9RLOGP5Uy0UAefv/7WcR4UkqkN1dflKUSWkz/1MDz7hpBfpbNWdxrWFhgSzJvHmvCe9m+RlbB1CzzIB/q+orbKyBcvR6ea8RzmvLZ8OT83p3j8MN/xlMZ46wUE6j+3ODvUt9nSAIfzRR/Lk0BJSQTrL3CsL/eNHiZ/tOBwItFB4HL7kSUtw5kDXEKZbnyf30bMAHje8oQlP/NNdQ50AJKaPhDKlRkV7A=
+  app: travis-ci-rails-test
+  on:
+    repo: BideoWego/travis-ci-rails-test
